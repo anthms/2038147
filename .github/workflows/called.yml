@@ -4,5 +4,7 @@ on:
 jobs:
   called-one:
     runs-on: ubuntu-latest
+    env:
+      id: ${{ github.job }}
     steps:
-      - run: echo "${{ github.job }}"
+      - run: echo "${{ env.id }}"
