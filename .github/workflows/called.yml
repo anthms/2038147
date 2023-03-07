@@ -5,4 +5,4 @@ jobs:
   called-one:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "${{ toJSON(jobs) }}"
+      - run: echo "${{ toJSON(github) }}"
